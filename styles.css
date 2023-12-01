@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Comic Sans MS;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#puzzleContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 10rem);
+    border: 1px dashed black;
+}
+
+#piezasContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 10rem);
+    gap: 0.5rem;
+}
+
+.pieza {
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+    cursor: move;
+    transition: 0.25s;
+
+}
+
+.pieza:hover {
+    background-color: chartreuse;
+    transition: 0.25s;
+}
+
+.botonPista {
+    margin-left: 0.5rem;
+}
+
+.overlayPista {
+    width: auto;
+    height: 500px;
+    display: none;
+    position: fixed;
+    margin-left: 0.5rem;
+    color: white;
+    border: 3px solid black;
+    z-index: 1000;
+}
+
+.mensajeCompleto {
+    font-size: 72px;
+    margin-left: 0.5rem;
+    color: green;
+}
